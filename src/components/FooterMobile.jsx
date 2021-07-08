@@ -8,7 +8,7 @@ const FooterWrapper = styled.div`
     background-color: #000;
     padding: 1rem;
     img {
-        width: 100%;
+        width: 60%;
         
     }
     color: #fff;
@@ -29,8 +29,7 @@ const FooterMobile = () => {
             </div>
             <div className="footer-tel">
                 <h2>+44(0) 1923213983</h2>
-                <h2>iren.jasko@quartz-scientific.co.uk</h2>
-                <h2>ian.girling@quartz-scientific.co.uk</h2>
+                
             </div>
             <address className="footer-address">
                 7G Dukes Yard

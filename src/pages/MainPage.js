@@ -27,8 +27,8 @@ import salt from '../images/CardPhotos/salt.png'
 const MainWrapper = styled.div`
     text-align: center;
     color: #fff;
-    background: rgb(149,141,144);
-    background: radial-gradient(circle, rgba(149,141,144,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(170,176,207);
+    background: radial-gradient(circle, rgba(170,176,207,1) 0%, rgba(163,166,189,1) 100%);
     .ukas-sep {
         padding: 3rem 0; 
                
@@ -38,9 +38,15 @@ const MainWrapper = styled.div`
         }
     }
     .about-section {
-        padding: 1rem;
+        margin: 1.5rem;
         font-size: 1.2rem;
         font-weight: 600;
+        background-color: #fff;
+        color: #000;
+        padding: 1rem;
+        h2 {
+            padding: 1rem;
+        }
     }
     @media screen and (min-width: 690px) {
         .about-section { 
@@ -127,8 +133,8 @@ const TestsWrapper = styled.div`
 `
 
 const PersonalCardsWrapper = styled.div`
-color: #000;
-padding: 2rem 0;
+        color: #000;
+        padding: 2rem 0 0;
     @media screen and (min-width: 690px){
         margin: 2rem;
         display: flex;
@@ -144,9 +150,15 @@ const Links = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem;
     a {
         padding: 0.3rem 0;
+        text-decoration: none;
+        color: #000;
+        transition: all 1s ease-in-out;
+        :hover {
+            color: red;
+        }
     }
     h2 {
         padding-bottom: 1rem;
@@ -242,6 +254,7 @@ const MainPage = () => {
             </TestsWrapper>
 
             <div className="about-section">
+                <h2>About us</h2>
                 <p>Since 1991 the company has provided chemical analysis and consultancy to the construction industry. In 1995 UKAS accreditation was gained. Since initial accreditation the scope of Quartz's has grown and now includes tests for aggregates, paint, gypsum plasters and water for concrete for example .</p>
                 <p>Technological advances in the industry and the requirement during restoration of historical buildings to use identical materials continue to make demands on the analysis of samples and the interpretation of results. Quartz Scientific has the depth of knowledge and experience to keep pace with changes as they occur.</p>
             </div>
@@ -250,6 +263,7 @@ const MainPage = () => {
                 <PersonalCard
                     title="Technical Manager"
                     img={irimg}
+                    email="iren.jasko@quartz-scientific.co.uk"
                     name="Mrs Iren S Jasko  MSc EurChem CSci CChem FRSC"
                     position="Iren as Technical Manager is responsible for ensuring that a high standard of expertise in relevant disciplines is maintained and staff are trained and deployed to meet the ongoing needs of the business and for maintaining the technical standards of work employed by Quartz Scientific staff.
 
@@ -258,6 +272,7 @@ const MainPage = () => {
                 <PersonalCard
                     title="Quality Manager"
                     img={iaimg}
+                    email="ian.girling@quartz-scientific.co.uk"
                     name="Dr Ian Girling, CChem, MRSC"
                     position="Ian Girling as Quality Manager is responsible for ensuring that procedures are employed to comply with the Quality Manual and EN ISO 17025 to maintain the requirements of a UKAS accredited laboratory.
 

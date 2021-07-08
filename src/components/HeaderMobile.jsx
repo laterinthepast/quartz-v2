@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import img from '../images/logo.gif'
 
 const Logo = styled.div`
-    padding:1rem 1.2rem 0;
-  
+    
     
     img {
-        width: 100%;
-        
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin: 1rem 1rem 0;
         
     }
 
