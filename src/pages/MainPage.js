@@ -56,7 +56,9 @@ const Landing = styled.div`
     justify-content: space-evenly;
     align-items: center;
     height: 70vh;
-    
+    h1 {
+        padding: 2rem;
+    }
     button {
         background: rgb(13,48,210);
         background: radial-gradient(circle, rgba(13,48,210,1) 0%, rgba(0,117,218,1) 100%);
@@ -92,9 +94,9 @@ const Landing = styled.div`
 `
 
 const CardsWrapper = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    
     position: relative;
     gap:1rem;
     transition: all 0.2s ease-in;
@@ -156,13 +158,13 @@ const MainPage = () => {
         <MainWrapper>
             <HeaderMobile />
             <Landing>
-                <h1>Chemical Analysis and Consultancy for the Construction Industry</h1>
-                <div>
+                <h1>Chemical Analysis and <br/>Consultancy<br/> for the <br/> Construction Industry</h1>
+                {/* <div>
                     <h3>44(0) 1923213983</h3>
                     <h3>iren.jasko@quartz-scientific.co.uk</h3>
                     <h3>ian.girling@quartz-scientific.co.uk</h3>
-                </div>
-                <a href="/"><button>Available analysis</button></a>
+                </div> */}
+                {/* <a href="/"><button>Available analysis</button></a> */}
             </Landing>
             <CardsWrapper>
                 <LandingCard

@@ -7,9 +7,9 @@ const Logo = styled.div`
   
     
     img {
-        position: relative;
-        z-index: 3;
-        max-width: 100%;
+        width: 100%;
+        
+        
     }
 
     @media screen and (min-width: 690px){

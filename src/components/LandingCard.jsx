@@ -49,7 +49,7 @@ const LandingCard = (props) => {
             
                 <img src={props.img} alt="" />
                 <h4>{props.title}</h4>
-                <p>{props.description}</p>
+                {/* <p>{props.description}</p> */}
             
         </CardWrapper>
     )
