@@ -6,21 +6,22 @@ import styled from 'styled-components';
 import LandingCard from '../components/LandingCard';
 import PersonalCard from '../components/PersonalCard';
 import img2 from '../images/1.jpg'
-import img3 from '../images/2.jpg'
+import img3 from '../images/img5.jpg'
+import img5 from '../images/img6.jpg'
 import img4 from '../images/3.jpg'
 import ukas from '../images/4 (2).jpg'
 import irimg from '../images/4 (1).gif'
 import iaimg from '../images/4 (2).gif'
 
-import card1 from '../images/CardPhotos/1 (2).png'
-import card2 from '../images/CardPhotos/1 (1).png'
-import card3 from '../images/CardPhotos/1 (3).png'
-import card4 from '../images/CardPhotos/1 (4).png'
-import card5 from '../images/CardPhotos/1 (5).png'
-import card6 from '../images/CardPhotos/1 (6).png'
-import card7 from '../images/CardPhotos/1 (7).png'
-import card8 from '../images/CardPhotos/1 (8).png'
-import card9 from '../images/CardPhotos/1 (9).png'
+import agg from '../images/CardPhotos/agg.png'
+import cement from '../images/CardPhotos/cement.png'
+import clay from '../images/CardPhotos/clay.png'
+import concrete from '../images/CardPhotos/concrete.png'
+import cont from '../images/CardPhotos/cont.png'
+import gyp from '../images/CardPhotos/gyp.png'
+import mor from '../images/CardPhotos/mor.png'
+import paint from '../images/CardPhotos/paint.png'
+import salt from '../images/CardPhotos/salt.png'
 
 
 const MainWrapper = styled.div`
@@ -30,7 +31,7 @@ const MainWrapper = styled.div`
     background: radial-gradient(circle, rgba(149,141,144,1) 0%, rgba(148,187,233,1) 100%);
     .ukas-sep {
         padding: 3rem 0; 
-        color: rgb(210,13,13);       
+               
         img {
             padding-top: 1rem;
             width: 100px;
@@ -38,6 +39,8 @@ const MainWrapper = styled.div`
     }
     .about-section {
         padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
     }
     @media screen and (min-width: 690px) {
         .about-section { 
@@ -55,8 +58,8 @@ const Landing = styled.div`
     height: 70vh;
     
     button {
-        background: rgb(210,13,13);
-        background: radial-gradient(circle, rgba(210,13,13,1) 0%, rgba(218,0,26,1) 100%);
+        background: rgb(13,48,210);
+        background: radial-gradient(circle, rgba(13,48,210,1) 0%, rgba(0,117,218,1) 100%);
         width: 200px;
         height: 50px;
         border-radius: 40px;
@@ -122,7 +125,6 @@ const TestsWrapper = styled.div`
 `
 
 const PersonalCardsWrapper = styled.div`
-background-color:#fff;
 color: #000;
 padding: 2rem 0;
     @media screen and (min-width: 690px){
@@ -164,20 +166,24 @@ const MainPage = () => {
             </Landing>
             <CardsWrapper>
                 <LandingCard
-                    image={img4}
-                    description="Physical Testing"
+                    img={img2}
+                    title="Physical Testing"
+                    description="Physical testing of a range of construction materials to British, European and American standards."
                 />
                 <LandingCard
-                    image={img3}
-                    description="Expert Witness"
+                    img={img3}
+                    title="Expert Witness"
+                    description="Mrs Iren Jasko MSc EurChem CSci CChem FRSC is available to act in an expert witness capacity to help resolve disputes and in formal civil and criminal legal proceedings."
                 />
                 <LandingCard
-                    image={img3}
-                    description="Chemical Analysis"
+                    img={img4}
+                    title="Chemical Analysis"
+                    description="Analysis of a range of construction materials to British, European and American standards. Unusual procedures can be accommodated from supplied documentation or our own extensive library."
                 />
                 <LandingCard
-                    image={img2}
-                    description="Site survey Investigation"
+                    img={img5}
+                    title="Site survey Investigation"
+                    description="Sites can be surveyed, in co-operation with trusted companies, for safety, prospective purchase or investigation of structural condition."
                 />
             </CardsWrapper>
             <div className="ukas-sep">
@@ -188,39 +194,47 @@ const MainPage = () => {
                 <TestCard
                     url={""}
                     title="Aggredates"
-                    src={card1}
+                    src={agg}
                 />
                 <TestCard
-                    title="Aggredates"
-                    src={card2}
+                    url={""}
+                    title="Clay Bricks"
+                    src={clay}
                 />
                 <TestCard
-                    title="Aggredates"
-                    src={card3}
+                    url={""}
+                    title="Cement"
+                    src={cement}
                 />
                 <TestCard
-                    title="Aggredates"
-                    src={card4}
+                    url={""}
+                    title="Concrete"
+                    src={concrete}
                 />
                 <TestCard
-                    title="Aggredates"
-                    src={card5}
+                    url={""}
+                    title="Contaminated Land"
+                    src={cont}
                 />
                 <TestCard
-                    title="Aggredates"
-                    src={card6}
+                    url={""}
+                    title="Gypsum Plaster"
+                    src={gyp}
                 />
                 <TestCard
-                    title="Aggredates"
-                    src={card7}
+                    url={""}
+                    title="Mortar and Screed"
+                    src={mor}
                 />
                 <TestCard
-                    title="Aggredates"
-                    src={card8}
+                    url={""}
+                    title="Paint"
+                    src={paint}
                 />
                 <TestCard
-                    title="Aggredates"
-                    src={card9}
+                    url={""}
+                    title="Salt"
+                    src={salt}
                 />
 
             </TestsWrapper>

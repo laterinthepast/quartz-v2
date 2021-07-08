@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const PersonalWrapper = styled.div`
 
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         margin: 1rem;
         font-size: 0.8rem;
@@ -12,7 +12,7 @@ const PersonalWrapper = styled.div`
             
             img {
                 width: 100px;
-                border-radius: 30px;
+                border-radius: 10px;
                 padding-left: 10px ;
             }
         }
@@ -27,7 +27,6 @@ const PersonalWrapper = styled.div`
                 padding: 5px 0;
             }
         }
-
         @media screen and (min-width: 690px){
             font-size: 1.3rem;
             flex-direction: column;

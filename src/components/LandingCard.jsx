@@ -4,9 +4,11 @@ import styled from 'styled-components';
 
 
 const CardWrapper = styled.div`
-    position: relative;
-
-    
+    width: 70%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
     img {
         height: 200px;
         width: 200px;
@@ -44,10 +46,11 @@ const CardWrapper = styled.div`
 const LandingCard = (props) => {
     return (
         <CardWrapper>
-            <a href={props.url}>
-                <img src={props.image} alt="card img" />
-                <span><p>{props.description}</p></span>
-            </a>
+            
+                <img src={props.img} alt="" />
+                <h4>{props.title}</h4>
+                <p>{props.description}</p>
+            
         </CardWrapper>
     )
 }
