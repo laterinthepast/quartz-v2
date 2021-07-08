@@ -3,22 +3,18 @@ import styled from 'styled-components';
 
 const PersonalWrapper = styled.div`
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
-        
+        flex-direction: column;
         padding: 1rem;
         font-size: 0.8rem;
         
-        /* .personal-photo {
+        
             img {
-                position: absolute;
-                width: 50px;
-                top: 0;
-                left: 0;
-                
-
+                width: 60px;
+                padding-bottom: 10px;
             }
-        } */
+        
         
         .personal-info {
             h2 {
@@ -34,9 +30,7 @@ const PersonalWrapper = styled.div`
         }
         @media screen and (min-width: 690px){
             font-size: 1.3rem;
-            flex-direction: column;
-            
-            
+            flex-direction: column;  
         }
 `
 
@@ -45,15 +39,16 @@ const PersonalWrapper = styled.div`
 const PersonalCard = (props) => {
     return (
         <PersonalWrapper>
+            
+                <img src={props.img} alt="personal" />
+            
             <div className="personal-info">
                 <h2>{props.name}</h2>
                 <h4>{props.title}</h4>
                 <p>{props.position}</p>
                 <h6>{props.email}</h6>
             </div>
-            {/* <div className="personal-photo">
-                <img src={props.img} alt="personal" />
-            </div> */}
+            
 
 
         </PersonalWrapper>

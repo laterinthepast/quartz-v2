@@ -6,13 +6,13 @@ import styled from 'styled-components';
 import LandingCard from '../components/LandingCard';
 import PersonalCard from '../components/PersonalCard';
 import img2 from '../images/1.jpg'
-import img3 from '../images/img5.jpg'
+/* import img3 from '../images/img5.jpg' */
 import img5 from '../images/img6.jpg'
-import img4 from '../images/3.jpg'
+/* import img4 from '../images/3.jpg' */
 import ukas from '../images/4 (2).jpg'
 import irimg from '../images/4 (1).gif'
 import iaimg from '../images/4 (2).gif'
-
+/* import tr from '../images/background/landingb.jpg' */
 import agg from '../images/CardPhotos/agg.png'
 import cement from '../images/CardPhotos/cement.png'
 import clay from '../images/CardPhotos/clay.png'
@@ -41,9 +41,10 @@ const MainWrapper = styled.div`
         margin: 1.5rem;
         font-size: 1.2rem;
         font-weight: 600;
-        background-color: #fff;
+        background-color: rgba(255,255,255, 0.1);
         color: #000;
         padding: 1rem;
+        letter-spacing: 1px;
         h2 {
             padding: 1rem;
         }
@@ -62,10 +63,12 @@ const Landing = styled.div`
     justify-content: space-evenly;
     align-items: center;
     height: 70vh;
+    
     h1 {
         padding: 2rem;
+        background: rgba(255,255,255, 0.2);
     }
-    button {
+/*     button {
         background: rgb(13,48,210);
         background: radial-gradient(circle, rgba(13,48,210,1) 0%, rgba(0,117,218,1) 100%);
         width: 200px;
@@ -78,7 +81,7 @@ const Landing = styled.div`
         padding: 1rem;
         text-decoration: none;
         color:#fff;
-    }
+    } */
  
     @media screen and (min-width: 690px) {
         flex-direction: row;
@@ -134,7 +137,7 @@ const TestsWrapper = styled.div`
 
 const PersonalCardsWrapper = styled.div`
         color: #000;
-        padding: 2rem 0 0;
+        padding: 0 1.3rem;
     @media screen and (min-width: 690px){
         margin: 2rem;
         display: flex;
@@ -156,7 +159,9 @@ const Links = styled.div`
         text-decoration: none;
         color: #000;
         transition: all 1s ease-in-out;
-        :hover {
+        font-weight: 600;
+
+        :hover{
             color: red;
         }
     }
@@ -185,17 +190,17 @@ const MainPage = () => {
                     description="Physical testing of a range of construction materials to British, European and American standards."
                 />
                 <LandingCard
-                    img={img3}
+                    img={img5}
                     title="Expert Witness"
                     description="Mrs Iren Jasko MSc EurChem CSci CChem FRSC is available to act in an expert witness capacity to help resolve disputes and in formal civil and criminal legal proceedings."
                 />
                 <LandingCard
-                    img={img4}
+                    img={img5}
                     title="Chemical Analysis"
                     description="Analysis of a range of construction materials to British, European and American standards. Unusual procedures can be accommodated from supplied documentation or our own extensive library."
                 />
                 <LandingCard
-                    img={img5}
+                    img={img2}
                     title="Site survey Investigation"
                     description="Sites can be surveyed, in co-operation with trusted companies, for safety, prospective purchase or investigation of structural condition."
                 />

@@ -6,16 +6,17 @@ import styled from 'styled-components';
 const CardWrapper = styled.div`
     
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 1rem;
+    
     background-color: #fff;
     color: #000;
     width: 100%;
     position: relative;
     img {
-        height: 200px;
+        height: 100%;
         width: 100%;
         object-fit: cover;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        opacity: 0.83;
         
     }
     span {
@@ -25,7 +26,7 @@ const CardWrapper = styled.div`
         transform: translate(-50%, -50%);
         color: #004C99;
         font-weight: 600;
-        background-color:rgba(255,255,233, 0.6);
+        background-color:rgba(255,255,233, 0.8);
         height: 30%;
         width: 100%;
         text-align: center;
