@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../images/logo.gif'
+
 import styled from 'styled-components';
 
 const FooterWrapper = styled.div`
