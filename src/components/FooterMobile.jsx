@@ -23,10 +23,7 @@ const FooterWrapper = styled.div`
 const FooterMobile = () => {
     return (
         <FooterWrapper>
-            <div className="footer-logo">
-                <img src={img} alt="logo" />
-
-            </div>
+            
             <div className="footer-tel">
                 <h2>+44(0) 1923213983</h2>
                 

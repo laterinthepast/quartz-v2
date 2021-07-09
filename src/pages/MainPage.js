@@ -6,13 +6,14 @@ import styled from 'styled-components';
 import LandingCard from '../components/LandingCard';
 import PersonalCard from '../components/PersonalCard';
 import img2 from '../images/1.jpg'
-/* import img3 from '../images/img5.jpg' */
+import mains from '../images/3612696.jpg'
+import main2 from '../images/3284602.jpg'
 import img5 from '../images/img6.jpg'
 /* import img4 from '../images/3.jpg' */
 import ukas from '../images/4 (2).jpg'
 import irimg from '../images/4 (1).gif'
 import iaimg from '../images/4 (2).gif'
-/* import tr from '../images/background/landingb.jpg' */
+import icon1 from '../images/icon (1).jpg'
 import agg from '../images/CardPhotos/agg.png'
 import cement from '../images/CardPhotos/cement.png'
 import clay from '../images/CardPhotos/clay.png'
@@ -26,27 +27,27 @@ import salt from '../images/CardPhotos/salt.png'
 
 const MainWrapper = styled.div`
     text-align: center;
-    color: #fff;
-    background: rgb(170,176,207);
-    background: radial-gradient(circle, rgba(170,176,207,1) 0%, rgba(163,166,189,1) 100%);
+    background: #EAEAEF;
     .ukas-sep {
         padding: 3rem 0; 
-               
         img {
             padding-top: 1rem;
-            width: 100px;
+            width: 20%;
         }
     }
     .about-section {
-        margin: 1.5rem;
+        
         font-size: 1.2rem;
         font-weight: 600;
-        background-color: rgba(255,255,255, 0.1);
+        background-color: #E7E6F3;
         color: #000;
         padding: 1rem;
         letter-spacing: 1px;
         h2 {
             padding: 1rem;
+        }
+        img {
+            width:50%;
         }
     }
     @media screen and (min-width: 690px) {
@@ -57,31 +58,22 @@ const MainWrapper = styled.div`
     }
 `
 const Landing = styled.div`
-    
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 70vh;
+    color: #004C99;
     
     h1 {
-        padding: 2rem;
-        background: rgba(255,255,255, 0.2);
+        font-size: 1.5rem;
+        padding: 2rem 1rem;
+        
     }
-/*     button {
-        background: rgb(13,48,210);
-        background: radial-gradient(circle, rgba(13,48,210,1) 0%, rgba(0,117,218,1) 100%);
-        width: 200px;
-        height: 50px;
-        border-radius: 40px;
-        border: none;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 900;
-        font-size: 1rem;
-        padding: 1rem;
-        text-decoration: none;
-        color:#fff;
-    } */
+    img {
+        width: 100%;
+    }
+
  
     @media screen and (min-width: 690px) {
         flex-direction: row;
@@ -94,7 +86,7 @@ const Landing = styled.div`
             width: 200px;
         }
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
         }
         h3 {
             font-size: 2rem;
@@ -103,13 +95,14 @@ const Landing = styled.div`
 `
 
 const CardsWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
     position: relative;
     gap:1rem;
     transition: all 0.2s ease-in;
-    margin: 1rem 1rem;
+    margin: 0rem 2rem;
     
     @media screen and (min-width: 690px) {
         display: flex;
@@ -138,6 +131,8 @@ const TestsWrapper = styled.div`
 const PersonalCardsWrapper = styled.div`
         color: #000;
         padding: 0 1.3rem;
+        background-color: #E7E6F3;
+
     @media screen and (min-width: 690px){
         margin: 2rem;
         display: flex;
@@ -154,6 +149,8 @@ const Links = styled.div`
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
+    background-color: #E7E6F3;
+
     a {
         padding: 0.3rem 0;
         text-decoration: none;
@@ -176,12 +173,7 @@ const MainPage = () => {
             <HeaderMobile />
             <Landing>
                 <h1>Chemical Analysis and <br/>Consultancy<br/> for the <br/> Construction Industry</h1>
-                {/* <div>
-                    <h3>44(0) 1923213983</h3>
-                    <h3>iren.jasko@quartz-scientific.co.uk</h3>
-                    <h3>ian.girling@quartz-scientific.co.uk</h3>
-                </div> */}
-                {/* <a href="/"><button>Available analysis</button></a> */}
+                <img src={mains} alt="" />
             </Landing>
             <CardsWrapper>
                 <LandingCard
@@ -208,8 +200,11 @@ const MainPage = () => {
             <div className="ukas-sep">
                 <h3>All tests are UKAS accredited</h3>
                 <img src={ukas} alt="ukas logo" />
+                
+                
             </div>
             <TestsWrapper>
+                
                 <TestCard
                     url={""}
                     title="Aggredates"
@@ -259,6 +254,7 @@ const MainPage = () => {
             </TestsWrapper>
 
             <div className="about-section">
+            <img src={main2} alt="lalal" />
                 <h2>About us</h2>
                 <p>Since 1991 the company has provided chemical analysis and consultancy to the construction industry. In 1995 UKAS accreditation was gained. Since initial accreditation the scope of Quartz's has grown and now includes tests for aggregates, paint, gypsum plasters and water for concrete for example .</p>
                 <p>Technological advances in the industry and the requirement during restoration of historical buildings to use identical materials continue to make demands on the analysis of samples and the interpretation of results. Quartz Scientific has the depth of knowledge and experience to keep pace with changes as they occur.</p>
@@ -299,3 +295,5 @@ const MainPage = () => {
 }
 
 export default MainPage
+
+{/* <a href="https://www.freepik.com/vectors/people">People vector created by pikisuperstar - www.freepik.com</a> */}
