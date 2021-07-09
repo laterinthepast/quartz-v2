@@ -13,7 +13,7 @@ import img5 from '../images/img6.jpg'
 import ukas from '../images/4 (2).jpg'
 import irimg from '../images/4 (1).gif'
 import iaimg from '../images/4 (2).gif'
-import icon1 from '../images/icon (1).jpg'
+
 import agg from '../images/CardPhotos/agg.png'
 import cement from '../images/CardPhotos/cement.png'
 import clay from '../images/CardPhotos/clay.png'
@@ -296,4 +296,3 @@ const MainPage = () => {
 
 export default MainPage
 
-{/* <a href="https://www.freepik.com/vectors/people">People vector created by pikisuperstar - www.freepik.com</a> */}
