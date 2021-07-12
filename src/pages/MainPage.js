@@ -65,19 +65,19 @@ const MainWrapper = styled.div`
 const Landing = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
     color: #004C99;
     
     h1 {
         font-size: 1.5rem;
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
         
     }
     img {
         width: 100%;
-        padding-bottom: 2rem;
+        
     }
 
  
