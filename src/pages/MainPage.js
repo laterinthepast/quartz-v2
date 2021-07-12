@@ -6,23 +6,25 @@ import styled from 'styled-components';
 import LandingCard from '../components/LandingCard';
 import PersonalCard from '../components/PersonalCard';
 import img2 from '../images/1.jpg'
-import mains from '../images/3612696.jpg'
-import main2 from '../images/3284602.jpg'
+import mains from '../images/landingf.jpg'
+import main2 from '../images/landingsec.jpg'
 import img5 from '../images/img6.jpg'
 /* import img4 from '../images/3.jpg' */
 import ukas from '../images/4 (2).jpg'
 import irimg from '../images/4 (1).gif'
 import iaimg from '../images/4 (2).gif'
 
-import agg from '../images/CardPhotos/agg.png'
+import agg from '../images/CardPhotos/agg.jpg'
 import cement from '../images/CardPhotos/cement.png'
 import clay from '../images/CardPhotos/clay.png'
 import concrete from '../images/CardPhotos/concrete.png'
-import cont from '../images/CardPhotos/cont.png'
+import cont from '../images/CardPhotos/cont.jpg'
 import gyp from '../images/CardPhotos/gyp.png'
-import mor from '../images/CardPhotos/mor.png'
+import mor from '../images/CardPhotos/mor.jpg'
 import paint from '../images/CardPhotos/paint.png'
-import salt from '../images/CardPhotos/salt.png'
+import salt from '../images/CardPhotos/salt.jpg'
+import soil from '../images/CardPhotos/soil.png'
+import water from '../images/CardPhotos/water.jpg'
 
 
 const MainWrapper = styled.div`
@@ -37,17 +39,20 @@ const MainWrapper = styled.div`
     }
     .about-section {
         
-        font-size: 1.2rem;
+        font-size: 1.11rem;
         font-weight: 600;
         background-color: #E7E6F3;
         color: #000;
-        padding: 1rem;
+        
+        p {
+            padding: 1rem;
+        }
         letter-spacing: 1px;
         h2 {
             padding: 1rem;
         }
         img {
-            width:50%;
+            width:100%;
         }
     }
     @media screen and (min-width: 690px) {
@@ -72,6 +77,7 @@ const Landing = styled.div`
     }
     img {
         width: 100%;
+        padding-bottom: 2rem;
     }
 
  
@@ -172,7 +178,7 @@ const MainPage = () => {
         <MainWrapper>
             <HeaderMobile />
             <Landing>
-                <h1>Chemical Analysis and <br/>Consultancy<br/> for the <br/> Construction Industry</h1>
+                <h1>Chemical Analysis and <br />Consultancy<br /> for the <br /> Construction Industry</h1>
                 <img src={mains} alt="" />
             </Landing>
             <CardsWrapper>
@@ -200,11 +206,11 @@ const MainPage = () => {
             <div className="ukas-sep">
                 <h3>All tests are UKAS accredited</h3>
                 <img src={ukas} alt="ukas logo" />
-                
-                
+
+
             </div>
             <TestsWrapper>
-                
+
                 <TestCard
                     url={""}
                     title="Aggredates"
@@ -250,11 +256,21 @@ const MainPage = () => {
                     title="Salt"
                     src={salt}
                 />
+                <TestCard
+                    url={""}
+                    title="Soil"
+                    src={soil}
+                />
+                <TestCard
+                    url={""}
+                    title="Water"
+                    src={water}
+                />
 
             </TestsWrapper>
 
             <div className="about-section">
-            <img src={main2} alt="lalal" />
+                <img src={main2} alt="lalal" />
                 <h2>About us</h2>
                 <p>Since 1991 the company has provided chemical analysis and consultancy to the construction industry. In 1995 UKAS accreditation was gained. Since initial accreditation the scope of Quartz's has grown and now includes tests for aggregates, paint, gypsum plasters and water for concrete for example .</p>
                 <p>Technological advances in the industry and the requirement during restoration of historical buildings to use identical materials continue to make demands on the analysis of samples and the interpretation of results. Quartz Scientific has the depth of knowledge and experience to keep pace with changes as they occur.</p>

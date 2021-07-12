@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const TestCardWrapper = styled.div`
-
+    padding: 0.1rem 0.2rem;
     position: relative;
     h5 {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         position: absolute;
         top:50%;
         left:50%;
@@ -17,17 +18,20 @@ const TestCardWrapper = styled.div`
         color: #000;
         text-decoration: none;  
     }
+    img {
+
+    }
+    
     
 `
 
 const TestCard = (props) => {
     return (
         <TestCardWrapper>
-            <a href={props.url}>
-
+            <Link to="/tests">
                 <h5>{props.title}</h5>
                 <img src={props.src} alt="test pic" />
-            </a>
+            </Link>
         </TestCardWrapper>
     )
 }
