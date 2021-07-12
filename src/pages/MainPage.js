@@ -6,10 +6,11 @@ import styled from 'styled-components';
 import LandingCard from '../components/LandingCard';
 import PersonalCard from '../components/PersonalCard';
 import img2 from '../images/1.jpg'
-import mains from '../images/landingf.jpg'
+
 import main2 from '../images/landingsec.jpg'
 import img5 from '../images/img6.jpg'
-/* import img4 from '../images/3.jpg' */
+
+import back2 from '../images/background/water.jpg'
 import ukas from '../images/4 (2).jpg'
 import irimg from '../images/4 (1).gif'
 import iaimg from '../images/4 (2).gif'
@@ -25,11 +26,14 @@ import paint from '../images/CardPhotos/paint.png'
 import salt from '../images/CardPhotos/salt.jpg'
 import soil from '../images/CardPhotos/soil.png'
 import water from '../images/CardPhotos/water.jpg'
-
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleUp, faPhone, faVial } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
 
 const MainWrapper = styled.div`
     text-align: center;
-    background: #EAEAEF;
+    background: #e5e5e5;
     .ukas-sep {
         padding: 3rem 0; 
         img {
@@ -38,7 +42,6 @@ const MainWrapper = styled.div`
         }
     }
     .about-section {
-        
         font-size: 1.11rem;
         font-weight: 600;
         background-color: #E7E6F3;
@@ -65,56 +68,114 @@ const MainWrapper = styled.div`
 const Landing = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 80vh;
-    color: #004C99;
-    
+    color: #14213d;
+    position: relative;
     h1 {
-        font-size: 1.5rem;
-        padding: 1rem 1rem;
-        
+        font-size: 1.9rem;
+        padding-bottom: 3rem;
     }
-    img {
-        width: 100%;
-        
-    }
-
+    .buttons1 {
+            position: absolute;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 0.2rem;
+            background: RGBA(252,163,17,0.7);
+            display: flex;
+            border-radius: 10px;
+            top: 2px;
+            left:2px;
+            a {
+            background-color: #14213d;
+            border-radius: 5px;   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px; 
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            
+            }
+            .tests {
+                padding-left: 2px;
+            }
+        }
+        .pinnedArrow {
+            .fa-arrow-alt-circle-up {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 100px;
+            }
+            position: fixed;
+            font-size: 3rem;
+            bottom: 0;
+            right: 10px;
+            z-index: 99;
+        }
  
     @media screen and (min-width: 690px) {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-        img {
-            display: none;
-        }
-        button {
-            width: 200px;
-        }
+        background-image:url('${back2}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         h1 {
-            font-size: 2rem;
+            font-size: 3rem;
+            color: #fff; 
         }
         h3 {
             font-size: 2rem;
         }
+        .buttons1 {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 1rem;
+            background: RGBA(252,163,17,0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 25%;
+            border-radius: 10px;
+            a {
+            background-color: #14213d;
+            border-radius: 5px;   
+            width: 180px;
+            height: 50px; 
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            }
+            
+        }
+        
     }
 `
 
 const CardsWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    
-    position: relative;
-    gap:1rem;
+    gap:0.5rem;
     transition: all 0.2s ease-in;
-    margin: 0rem 2rem;
+    margin: 0rem 1rem;
+    background-color: RGBA(252,163,17,0.9);
+    height: 820px;
+    margin-top: -2rem;
+    border-radius: 40px;
+    position: relative;
     
     @media screen and (min-width: 690px) {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
-        margin: 4rem;
+        flex-wrap: nowrap;
+        margin-top: -2rem;
+        
     }
 `
 
@@ -173,13 +234,35 @@ const Links = styled.div`
     }
 `
 
+
+
 const MainPage = () => {
     return (
         <MainWrapper>
             <HeaderMobile />
             <Landing>
                 <h1>Chemical Analysis and <br />Consultancy<br /> for the <br /> Construction Industry</h1>
-                <img src={mains} alt="" />
+                <div className="buttons1">
+                    <div className="contact">
+                        <a href="#contact">
+                            <FontAwesomeIcon icon={faPhone} />
+                        </a>
+                    </div>
+                    <div className="tests">
+                        <Link to="/tests">
+                            <FontAwesomeIcon icon={faVial} />
+                        </Link>
+                    </div>
+                </div>
+                <div className="pinnedArrow">
+                    <Fade bottom>
+                        <a href="#header">
+                            <FontAwesomeIcon icon={faArrowAltCircleUp} />
+                        </a>
+                    </Fade>
+                </div>
+
+
             </Landing>
             <CardsWrapper>
                 <LandingCard

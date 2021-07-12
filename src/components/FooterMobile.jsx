@@ -24,7 +24,7 @@ const FooterMobile = () => {
     return (
         <FooterWrapper>
             
-            <div className="footer-tel">
+            <div className="footer-tel" id="contact">
                 <h2>+44(0) 1923213983</h2>
                 
             </div>

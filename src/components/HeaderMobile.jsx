@@ -3,27 +3,24 @@ import styled from 'styled-components';
 import img from '../images/logo (2).png'
 
 const Logo = styled.div`
-    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     max-width: 100%;
     color: #000;
-    padding: 0.4rem;
+    padding: 1.2rem 1.2rem 2px;
+    border-bottom: 3px solid #000;
     img {
         width: 50px;
-        
-        
     }
-    h1 {
-        
-        
-    }
-
     @media screen and (min-width: 690px){
+        justify-content: flex-start;
+        align-items: flex-end;
         img {
-            width: 40%;
-           
+            width: 10%; 
+        }
+        h1 {
+            font-size: 4rem;
         }
     }
 `
@@ -33,7 +30,8 @@ const HeaderMobile = () => {
         
             <Logo>
                 <img src={img} alt="logo"/>
-                <h1>Quartz Scientific</h1>
+                <h1 id="header">Quartz Scientific</h1>
+                
             </Logo>
         
     )
