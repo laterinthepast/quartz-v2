@@ -9,14 +9,14 @@ const Logo = styled.div`
     align-items: center;
     max-width: 100%;
     color: #000;
-    padding: 1rem;
+    padding: 0.4rem;
     img {
         width: 50px;
         
         
     }
     h1 {
-        font-family: 'Yomogi', cursive;
+        
         
     }
 

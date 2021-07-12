@@ -65,7 +65,7 @@ const MainWrapper = styled.div`
 const Landing = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 80vh;
     color: #004C99;
@@ -136,7 +136,7 @@ const TestsWrapper = styled.div`
 
 const PersonalCardsWrapper = styled.div`
         color: #000;
-        padding: 0 1.3rem;
+        padding: 0 0.2rem;
         background-color: #E7E6F3;
 
     @media screen and (min-width: 690px){
