@@ -6,17 +6,18 @@ import styled from 'styled-components';
 const CardWrapper = styled.div`
     background-color: #EAEAEF;
     color: #000;
-    height: 180px;
+    height: 190px;
     padding: 0.2rem;
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 40px;
     
     h4 {
-    
+        background: #fff;
+        
     }
     p {
     

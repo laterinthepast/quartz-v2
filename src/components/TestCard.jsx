@@ -11,11 +11,11 @@ const TestCardWrapper = styled.div`
         top:50%;
         left:50%;
         transform: translate(-50%, -50%);
-        background-color: rgba(255,255,255, 0.5) ;
-        width: 100%;
+        background-color: #047BF8;
+        width: 95%;
     }
     a {
-        color: #000;
+        color: #fff;
         text-decoration: none;  
     }
     img {

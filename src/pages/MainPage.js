@@ -8,6 +8,7 @@ import PersonalCard from '../components/PersonalCard';
 import img2 from '../images/1.jpg'
 
 import main2 from '../images/landingsec.jpg'
+import const2 from '../images/const2.jpg'
 import img5 from '../images/img6.jpg'
 
 import back2 from '../images/background/water.jpg'
@@ -68,32 +69,41 @@ const MainWrapper = styled.div`
 const Landing = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 80vh;
     color: #14213d;
     position: relative;
-    h1 {
-        font-size: 1.9rem;
-        padding-bottom: 3rem;
+    background: #fff;
+    img {
+        width: 100%;
     }
+    h1 {
+        font-size: 1.1rem;
+        padding: 3.5rem 2rem 0;
+        
+    }
+    span {
+            font-size: 1.49rem;
+            
+        }
     .buttons1 {
             position: absolute;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             padding: 0.2rem;
-            background: RGBA(252,163,17,0.7);
+            background: #047BF8;
             display: flex;
             border-radius: 10px;
-            top: 2px;
-            left:2px;
+            top: 5px;
+            left:5px;
             a {
             background-color: #14213d;
             border-radius: 5px;   
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 40px;
-            height: 40px; 
+            width: 30px;
+            height: 30px; 
             color: #fff;
             text-decoration: none;
             font-size: 1rem;
@@ -105,8 +115,8 @@ const Landing = styled.div`
         }
         .pinnedArrow {
             .fa-arrow-alt-circle-up {
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 border-radius: 100px;
+                color: #000;
             }
             position: fixed;
             font-size: 3rem;
@@ -162,8 +172,8 @@ const CardsWrapper = styled.div`
     flex-wrap: wrap;
     gap:0.5rem;
     transition: all 0.2s ease-in;
-    margin: 0rem 1rem;
-    background-color: RGBA(252,163,17,0.9);
+    margin: 0rem 2rem;
+    background-color: #047BF8;
     height: 820px;
     margin-top: -2rem;
     border-radius: 40px;
@@ -182,7 +192,6 @@ const CardsWrapper = styled.div`
 const TestsWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    
     font-size:0.9rem;
     background-color: #fff;
     color: #000;
@@ -241,7 +250,9 @@ const MainPage = () => {
         <MainWrapper>
             <HeaderMobile />
             <Landing>
-                <h1>Chemical Analysis and <br />Consultancy<br /> for the <br /> Construction Industry</h1>
+                <h1><span>Chemical </span>Analysis and Consultancy for the<span> Construction Industry</span></h1>
+                <img src={const2} alt=""/>
+                
                 <div className="buttons1">
                     <div className="contact">
                         <a href="#contact">
@@ -273,12 +284,12 @@ const MainPage = () => {
                 <LandingCard
                     img={img5}
                     title="Expert Witness"
-                    description="Mrs Iren Jasko MSc EurChem CSci CChem FRSC is available to act in an expert witness capacity to help resolve disputes and in formal civil and criminal legal proceedings."
+                    description="Mrs Iren Jasko is available to act in an expert witness capacity to help resolve disputes and in formal civil and criminal legal proceedings."
                 />
                 <LandingCard
                     img={img5}
                     title="Chemical Analysis"
-                    description="Analysis of a range of construction materials to British, European and American standards. Unusual procedures can be accommodated from supplied documentation or our own extensive library."
+                    description="Analysis of a range of construction materials to British, European and American standards. "
                 />
                 <LandingCard
                     img={img2}

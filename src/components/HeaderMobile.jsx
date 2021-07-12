@@ -10,6 +10,7 @@ const Logo = styled.div`
     color: #000;
     padding: 1.2rem 1.2rem 2px;
     border-bottom: 3px solid #000;
+    background: #fff;
     img {
         width: 50px;
     }
