@@ -11,7 +11,7 @@ function App() {
           <MainPage/>
         </Route>
         <Route path="/tests">
-          <AllTests/>
+          <AllTests />
         </Route>
       </Switch>
       

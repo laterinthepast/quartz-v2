@@ -31,7 +31,7 @@ const TestsWrapper = styled.div`
 const AllTests = () => {
     return (
         <TestsWrapper>
-            <h2>AGGREGATES</h2>
+            <h2 id="agg">AGGREGATES</h2>
             <img src={agg} alt=""/>
             <h6>Chemical Tests and relatedOpinions and Interpretations</h6>
             <table>

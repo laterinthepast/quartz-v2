@@ -210,59 +210,47 @@ const MainPage = () => {
 
             </div>
             <TestsWrapper>
-
                 <TestCard
-                    url={""}
                     title="Aggredates"
                     src={agg}
                 />
                 <TestCard
-                    url={""}
                     title="Clay Bricks"
                     src={clay}
                 />
                 <TestCard
-                    url={""}
                     title="Cement"
                     src={cement}
                 />
                 <TestCard
-                    url={""}
                     title="Concrete"
                     src={concrete}
                 />
                 <TestCard
-                    url={""}
                     title="Contaminated Land"
                     src={cont}
                 />
                 <TestCard
-                    url={""}
                     title="Gypsum Plaster"
                     src={gyp}
                 />
                 <TestCard
-                    url={""}
                     title="Mortar and Screed"
                     src={mor}
                 />
                 <TestCard
-                    url={""}
                     title="Paint"
                     src={paint}
                 />
                 <TestCard
-                    url={""}
                     title="Salt"
                     src={salt}
                 />
                 <TestCard
-                    url={""}
                     title="Soil"
                     src={soil}
                 />
                 <TestCard
-                    url={""}
                     title="Water"
                     src={water}
                 />
